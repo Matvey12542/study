@@ -1,0 +1,48 @@
+body{
+  /*width: 600px;*/
+
+  margin: 0;
+  padding: 0;
+
+}
+/*#wrap{
+  margin: 0 auto;
+  width: 800px;
+   border-right: 1px solid black;
+}*/
+#header{
+  height: 100px;
+  border: 2px solid black;
+}
+#left{
+  position: absolute;
+  left: 5px;
+  width: 190px;
+  top: 44px;
+}
+.left-centr{
+  position: absolute;
+  left: 205px;
+  width: 190px;
+  top: 44px;
+
+}
+#main{
+  position: absolute;
+  left: 405px;
+  width: 190px;
+  top: 44px;
+}
+
+#right{
+  position: absolute;
+  left: 605;
+  width: 190px;
+  top: 44px;
+}
+#footer{
+  clear: both;
+  text-align: center;
+
+  border: 2px solid black;
+}

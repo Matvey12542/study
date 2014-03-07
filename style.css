@@ -1,0 +1,209 @@
+
+.button{
+  float: left;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  /*background: #333;*/
+  cursor: pointer;
+
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255, 255, .6),
+  inset 0 0 20px rgba(0,0, 0, .1);
+  -moz-box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255, 255, .6),
+  inset 0 0 20px rgba(0,0, 0, .1);
+  -webkit-box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255, 255, .6),
+  inset 0 0 20px rgba(0,0, 0, .1);
+}
+
+.button:hover {
+
+  box-shadow: inset 0 0 20px rgba(0,0,0,.25),
+   0 2px 0 rgba(255,255, 255, .4),
+  inset 0 2px 0 rgba(0,0, 0, .1);
+}
+
+.button::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  display: block;
+  opacity: .7;
+}
+.foto{
+  background: url(https://cdn1.iconfinder.com/data/icons/halloween-2/128/bats-moon-icon.png)
+  center no-repeat;
+}
+.sec{
+  background: url(https://cdn1.iconfinder.com/data/icons/halloween-2/128/ghost-icon.png)
+  center no-repeat;
+}
+.the{
+  background: url(https://cdn3.iconfinder.com/data/icons/weather-and-forecast/41/Weather_icons_grey-01-32.png)
+  center no-repeat;
+}
+.button:hover::after {
+  background-position: center 52%;
+}
+/**/
+body{
+  text-decoration: uppercase;
+}
+.nav{
+  list-style: none;     /*марктровка точками*/
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  opacity: .5;
+  transition: opacity .3 ease-in-out;
+}
+.nav:hover{
+  opacity: 1;
+}
+
+.nav li {
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+.nav li:hover{
+  width: 200px;
+  height: 174px;
+}
+.nav li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  background: #bbb;
+  margin: 1px;
+  color: #fff;
+  padding-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  -moz-transition: background .2s ease-in-out;
+  -webkit-transition: background .2s ease-in-out;
+  -o-transition: background .2s ease-in-out;
+  transition: background .2s ease-in-out;
+}
+
+.nav li a:first-child {
+  font-size: 1.1em;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  text-indent: 36px;
+}
+.nav li a:first-child::before{
+  content: "";
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  top: 15px;
+  left: 15px;
+}
+.nav li a:hover {
+  background: #2fc5ff;
+}
+.main a:first-child::before{
+  background-image: url(https://cdn4.iconfinder.com/data/icons/pictype-free-vector-icons/16/home-20.png)
+}
+.set a:first-child::before{
+  background-image: url(https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/settings-24-20.png)
+}
+.link a:first-child::before{
+  background-image: url(https://cdn2.iconfinder.com/data/icons/pittogrammi/142/95-20.png)
+}
+.search a:first-child::before{
+  background-image: url(https://cdn3.iconfinder.com/data/icons/eightyshades/512/11_Search-20.png)
+}
+ul{
+
+  /*clear: both;*/
+
+}
+/***gradient **/
+/*.box {
+  width: 400px;
+  height: 400px;
+  float: left;
+  margin: 40px;
+  background: #999;
+  border-radius: 5px;
+  box-shadow:  0 8px 15px rgba(0,0,0,.6);
+  background: linear-gradient(120deg, #333,#bbb);
+}*/
+/**transform */
+#wrap{
+
+  -webkit-perspective: 500px;
+  width: 300px;
+  height: 300px;
+}
+
+.kont{
+  background: rgba(0,0,0,.3);
+  border-radius: 8px;
+
+  width: 200px;
+  height: 150px;
+  margin: 80px;
+  line-height: 150px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #fff;
+  /*clear: both;*/
+
+  -webkit-transform:  rotate3d(1,-4,1,30deg) ;
+  /*-webkit-transform-origin: top right;*/
+}
+
+/**cube*/
+#wrap{
+  margin: 80px;
+}
+#cube{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  -webkit-transform-origin: 50% 50% -150px;
+}
+.side{
+  width: 300px;
+  height: 300px;
+  background: -webkit-radial-gradient(rgba(0,0,0,.3));
+  position: absolute;
+  border: 10px solid #fff;
+  border-radius: 10px;
+  font-size: 5em;
+  color: #fff;
+  line-height: 300px;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
+  box-shadow: 0 0 6px rgba(0,0,0,.5);
+  -webkit-transform-origin: 50% 50% -150px;
+}
+#side2{
+  -webkit-transform:rotateY(90deg);
+}
+#side3{
+  -webkit-transform:rotateY(90deg);
+}
+#side4{
+  -webkit-transform:rotateY(90deg);
+}
+#side5{
+  -webkit-transform:rotateY(90deg);
+}
+#side6{
+  -webkit-transform:rotateY(90deg);
+
+}

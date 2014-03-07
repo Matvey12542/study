@@ -1,0 +1,10 @@
+div + tab = <div></div>
+div.clasname
+div#class
+.clasname
+.clasname.clasname
+.wrap>.container>.col-12^(.col-3>ul.nav>li)+.col-9
+ul.nav>li*10>a{same text $@5}
+ul.nav>li>lorem70
+!>.container>.row>.col-12>c{Some part of m}
+
